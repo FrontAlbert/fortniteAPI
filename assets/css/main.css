@@ -679,6 +679,16 @@ body.is-loading #banner > .inner {
     font-family: "Luckiest Guy", cursive;
 }
 
+.inner h2{
+    margin: auto;
+    width: 50%;
+}
+
+.inner a{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
 .banners{
     
     border: 1px solid blue;
