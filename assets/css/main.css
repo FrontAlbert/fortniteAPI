@@ -18,8 +18,6 @@
     vertical-align: baseline;
 }
 
-
-
 /* Box Model */
 
 *,
@@ -36,10 +34,7 @@
     width: device-width;
 }
 
-
-
 /* Contact */
-
 
 /* Form */
 
@@ -623,7 +618,14 @@ body.is-loading #banner > .inner {
 
 @media screen and (max-width: 980px) {
     #main #header {
-        padding: 1.15em 2em;
+        padding: 3em 2em;
+    }
+}
+@media screen and (max-width: 980px) {
+    #banner {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
     }
 }
 
@@ -632,8 +634,6 @@ body.is-loading #banner > .inner {
         text-align: center;
     }
 }
-
-
 
 /* Search Bar */
 .search-form {
@@ -659,12 +659,11 @@ body.is-loading #banner > .inner {
     display: flex;
 }
 
-.player-header p{
+.player-header p {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
 }
-
 
 .player-name {
     font-family: "Luckiest Guy", cursive;
@@ -679,39 +678,39 @@ body.is-loading #banner > .inner {
     font-family: "Luckiest Guy", cursive;
 }
 
-.inner h2{
+.inner h2 {
     margin: auto;
     width: 50%;
 }
 
-.inner a{
+.inner a {
     font-size: 2rem;
     text-decoration: underline;
 }
 
-.banners{
-    
+.banners {
     border: 1px solid blue;
 }
 
-#shopId{
+#shopId {
     height: 100vh;
     background-image: url(../../images/banner.jpg);
 }
-#shopId h4{
+
+#shopId h4 {
     color: white;
     font-family: "Luckiest Guy", cursive;
     font-size: 2rem;
 }
 
-.weekly-shop{
+.weekly-shop {
     font-family: "Luckiest Guy", cursive;
     color: white;
     font-size: 5rem;
     padding-bottom: 2rem;
 }
 
-.dailyshop{
+.dailyshop {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -721,32 +720,56 @@ body.is-loading #banner > .inner {
     width: 60%;
     margin: auto;
     margin-top: 3rem;
-
 }
-.entire{
+
+.entire {
     margin: 1rem;
     display: flex;
     justify-content: center;
     border-radius: 50px;
 }
-.entire:hover{
+.entire:hover {
     padding: 3rem;
     background: #5e859c;
     color: black;
 }
 
-.details p{
+.details p {
     font-family: "Luckiest Guy", cursive;
     color: white;
     font-size: 1rem;
     text-align: center;
 }
 
-.entire img{
+.entire img {
     width: 10rem;
 }
 
-#date{
+@media screen and (max-width: 1095px) {
+    .dailyshop {
+        width: 100%;
+    }
+    .entire img {
+        width: 7rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #shopId h1,
+    h4,
+    p {
+        font-size: 2rem;
+    }
+    .entire {
+        width: 20%;
+    }
+    .entire:hover {
+        padding: 1rem;
+        color: black;
+    }
+}
+
+#date {
     font-family: "Luckiest Guy", cursive;
     color: white;
     font-size: 2rem;
