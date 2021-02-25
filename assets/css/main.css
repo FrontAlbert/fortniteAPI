@@ -774,3 +774,13 @@ body.is-loading #banner > .inner {
     color: white;
     font-size: 2rem;
 }
+
+.more-projects a {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 5rem;
+}
+
+.here:hover {
+    font-size: 5rem;
+    border-bottom: 3px solid yellow;
+}
